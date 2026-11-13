@@ -34,6 +34,7 @@ defaults:
 jobs:
   eslint:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
@@ -48,6 +49,7 @@ jobs:
   # This job just check code style for in-template contributions.
   code-style:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
